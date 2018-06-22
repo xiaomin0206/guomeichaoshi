@@ -17,7 +17,7 @@ gulp.task("copy-js",function(){
 	.pipe(connect.reload());
 });
 gulp.task("sass",function(){
-	gulp.src("scss/**")
+	gulp.src("css/**")
 	.pipe(sass())
 	.pipe(gulp.dest("dist/css"))
 	.pipe(connect.reload());
@@ -31,7 +31,7 @@ gulp.task("server",function(){
 gulp.task("watch",function(){
 	gulp.watch("html/**",["copy-html"]);
 	gulp.watch("img/**",["copy-img"]);
-	gulp.watch("scss/**",["sass"]);
+	gulp.watch("css/**",["sass"]);
 	gulp.watch("js/**",["copy-js"]);
 	
 })
