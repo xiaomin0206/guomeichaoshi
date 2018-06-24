@@ -400,7 +400,8 @@ a:hover {
   margin: 0 auto;
   padding-top: 30px;
   width: 1200px;
-  height: 597px; }
+  height: 597px;
+  margin-bottom: 30px; }
 
 .pinpai-left {
   float: left;
@@ -428,3 +429,222 @@ a:hover {
 
 .pinpai-middle {
   margin: 0 14px; }
+
+.pinpai-right {
+  float: left;
+  width: 390px; }
+
+.pinpai-right-p {
+  font-size: 20px;
+  color: #fff;
+  width: 382px;
+  padding-left: 10px;
+  height: 38px;
+  line-height: 38px;
+  background: #d917a2;
+  margin-bottom: 1px; }
+
+.pinpai-right1 {
+  border: 1px solid #CECECE; }
+
+.pinpai-right-ul {
+  width: 393px;
+  height: 50px;
+  border-bottom: 1px solid #CECECE; }
+  .pinpai-right-ul li {
+    position: relative;
+    float: left;
+    border: none;
+    width: 128px;
+    margin-right: 1px;
+    height: 50px;
+    background: #f5f5f5;
+    text-align: center;
+    cursor: pointer; }
+    .pinpai-right-ul li p {
+      width: 126px;
+      height: 22px;
+      padding-top: 6px;
+      font-size: 16px;
+      font-weight: 400; }
+    .pinpai-right-ul li span {
+      display: block;
+      line-height: 14px;
+      color: #999;
+      font-size: 12px; }
+      .pinpai-right-ul li span em {
+        font-style: normal; }
+
+.pinpai-1 {
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  padding-top: 5px;
+  height: 20px;
+  color: #333;
+  text-decoration: none;
+  overflow: hidden; }
+
+.pinpai-right-ul1 {
+  position: absolute;
+  display: block;
+  height: 507px;
+  width: 390px;
+  border: 1px solid #CECECE;
+  border-top: none; }
+
+.pinpai-right-ul1 li {
+  float: left;
+  border-right: 1px dashed #eee;
+  border-bottom: 1px dashed #eee;
+  width: 194px;
+  height: 186px; }
+
+.pinpai-right-ul1 li:nth-child(1) {
+  height: 134px; }
+  .pinpai-right-ul1 li:nth-child(1) img {
+    height: 90px; }
+
+.pinpai-right-ul1 li:nth-child(2) {
+  height: 134px; }
+  .pinpai-right-ul1 li:nth-child(2) img {
+    height: 90px; }
+
+.pinpai-right-ul1 li span {
+  display: block;
+  margin-left: 10px;
+  padding-top: 0;
+  line-height: 18px;
+  height: auto;
+  font-size: 14px;
+  font-weight: 400;
+  color: #e3101e; }
+
+.pinpai-2 img {
+  display: block;
+  margin: 0 auto;
+  height: 130px; }
+
+.pinpai-right-22 {
+  position: absolute;
+  display: none; }
+
+.pinpai-right-33 {
+  position: absolute;
+  display: none; }
+
+#like {
+  width: 1200px;
+  height: 264px;
+  margin: 0 auto; }
+
+.like-top {
+  height: 37px;
+  line-height: 37px; }
+  .like-top p {
+    float: left;
+    width: 360px;
+    height: 26px;
+    font-size: 26px;
+    color: #333; }
+  .like-top .btn {
+    float: right; }
+
+.list1 {
+  height: 196px;
+  float: left;
+  padding: 0 20px;
+  width: 159px;
+  border-right: 1px dashed #eee; }
+  .list1 span {
+    color: red; }
+
+.list1 a:first-child {
+  display: block;
+  width: 140px;
+  height: 120px;
+  margin-top: 15px;
+  margin-left: 20px;
+  text-align: center; }
+
+.list {
+  position: absolute;
+  background: #ffffff; }
+
+.list1 a:nth-child(2) {
+  font-size: 12px;
+  white-space: nowrap;
+  margin-top: 10px;
+  display: block;
+  width: 160px;
+  height: 22px;
+  overflow: hidden; }
+
+.like-1 {
+  width: 1200px;
+  height: 195px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: relative;
+  background: #fff;
+  border: 1px solid #eee;
+  overflow: hidden; }
+
+.content1 li {
+  height: 195px;
+  list-style: none;
+  position: absolute; }
+
+.btn1 {
+  float: right;
+  margin-right: 3px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #CECECE;
+  color: black;
+  border-radius: 50%;
+  opacity: .5;
+  line-height: 24px;
+  text-align: center;
+  font-size: 20px;
+  top: 50%;
+  cursor: pointer; }
+
+.btn1:hover {
+  color: red; }
+
+#jiushui {
+  width: 1200px;
+  height: 99px;
+  margin: 40px auto 0;
+  background: #d917a2;
+  padding: 15px 0; }
+
+.jiushui1 {
+  float: left;
+  padding-left: 46px;
+  width: 253px;
+  height: 99px;
+  border-right: 1px dashed #f09463; }
+  .jiushui1 p {
+    width: 253px;
+    height: 22px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #fff; }
+  .jiushui1 a {
+    float: left;
+    display: block;
+    margin-right: 20px;
+    width: 60px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #fff;
+    overflow: hidden; }
+    .jiushui1 a:hover {
+      color: #fff !important;
+      text-decoration: underline; }
+
+.jiushui2 {
+  border-right: none; }
