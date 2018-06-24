@@ -25,6 +25,14 @@ body {
 input, a {
   outline: none; }
 
+@font-face {
+  font-family: 'iconfont';
+  src: url("../font/iconfont.eot");
+  src: url("../font/iconfont.eot?#iefix") format("embedded-opentype"), url("../font/iconfont.woff") format("woff"), url("../font/iconfont.ttf") format("truetype"), url("../font/iconfont.svg#iconfont") format("svg"); }
+
+body {
+  background: #ffffff; }
+
 #wrap {
   width: 100%;
   background: #061864; }
@@ -45,6 +53,7 @@ input, a {
   background: #f8f8f8;
   height: 30px; }
   #top .toplist li {
+    cursor: pointer;
     color: #5e5e5e;
     font-size: 12px;
     height: 30px;
@@ -60,4 +69,337 @@ input, a {
     #top .toplist li:nth-child(2) {
       height: 30px;
       line-height: 30px;
-      margin: 0 10px; }
+      margin-top: 0;
+      margin-left: 10px; }
+
+#top .toplist li:nth-child(3) {
+  width: 80px;
+  padding-left: 10px;
+  position: relative; }
+  #top .toplist li:nth-child(3) a {
+    margin-top: 8px;
+    display: flex; }
+    #top .toplist li:nth-child(3) a span {
+      display: block;
+      width: 7px;
+      height: 7px;
+      margin: 5px 5px 0 5px; }
+
+#top li a:hover {
+  color: red; }
+
+#top .last {
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  display: flex; }
+
+#top .last a:first-child {
+  margin: 8px 10px 0 10px;
+  display: block;
+  width: 24px;
+  height: 14px;
+  line-height: 14px;
+  font-size: 12px;
+  margin-right: 10px; }
+
+#top .last a:last-child {
+  margin-top: 8px;
+  display: flex;
+  line-height: 14px;
+  height: 14px;
+  font-size: 12px;
+  color: #d917a2; }
+
+#top .last span {
+  display: block;
+  width: 14px; }
+
+.toplist-1 {
+  z-index: 1;
+  position: absolute;
+  background: #ffffff;
+  top: 30px;
+  left: -1px;
+  display: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 305px;
+  height: 216px;
+  border: 1px solid #CECECE;
+  border-top: none; }
+  .toplist-1 .toplist-1-top {
+    display: flex;
+    height: 90px;
+    line-height: 90px; }
+    .toplist-1 .toplist-1-top span {
+      margin: 16px 16px 0 0; }
+      .toplist-1 .toplist-1-top span a {
+        display: block; }
+  .toplist-1 .toplist-1-middle {
+    width: 303px;
+    height: 0;
+    border: 1px solid #CECECE; }
+  .toplist-1 .toplist-1-botton {
+    position: relative;
+    padding-top: 16px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between; }
+    .toplist-1 .toplist-1-botton a {
+      margin-top: 0 !important;
+      display: block;
+      border: none; }
+
+.toplist-2-1 {
+  display: none;
+  position: absolute;
+  background: #ffffff;
+  width: 262px;
+  height: 300px;
+  z-index: 1; }
+  .toplist-2-1 .toplist-2-top {
+    height: 109px;
+    font-size: 12px; }
+    .toplist-2-1 .toplist-2-top p {
+      margin-top: 16px;
+      width: 100%; }
+    .toplist-2-1 .toplist-2-top a {
+      display: block;
+      width: 118px;
+      height: 12px;
+      float: left; }
+  .toplist-2-1 .toplist-2-middle {
+    padding-top: 12px;
+    height: 56px;
+    border-top: 1px solid #CECECE; }
+  .toplist-2-1 .toplist-2-botton {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+    height: 98px;
+    background: #f8f8f8; }
+    .toplist-2-1 .toplist-2-botton p {
+      width: 100%;
+      padding: 12px 0 12px 0; }
+    .toplist-2-1 .toplist-2-botton img {
+      float: left;
+      margin-left: 10px; }
+
+.toplist-2-middle a {
+  float: left;
+  display: block;
+  width: 62px;
+  height: 12px;
+  line-height: 12px; }
+
+/*.toplist-1-botton #wrap-1{
+                top: 90px;
+                left: 0;
+                height: 96px;
+                position: relative;
+                overflow: hidden;
+            }
+            #imgList{
+            
+                height: 96px;
+                position: absolute;
+            }
+            li{
+                list-style: none;
+                float: left;
+            }
+            #imgList div{
+                width: 74px;
+            }
+            #imgList img{
+                display: block;
+                width: 800px;
+                height: 400px;
+                border: none;
+            }
+            .btn{
+                position: absolute;
+                width: 18px;
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+                background: #CECECE;
+                color: red;
+                font-size: 30px;
+                top: 50%;
+                margin-top: -15px;
+                cursor: pointer;
+            }
+            
+            .pre{
+                left:0;
+            }
+            .next{
+                right:0;
+            }*/
+.toplist2 {
+  float: right;
+  width: 500px; }
+  .toplist2 li {
+    float: left;
+    cursor: pointer;
+    color: #5e5e5e;
+    font-size: 12px; }
+    .toplist2 li:nth-child(1) {
+      display: block;
+      width: 58px;
+      height: 30px;
+      line-height: 30px; }
+
+#top .toplist2 li:nth-child(2) {
+  height: 30px;
+  width: 75px;
+  padding-left: 5px;
+  position: relative; }
+  #top .toplist2 li:nth-child(2) a {
+    margin-top: 8px;
+    display: flex; }
+    #top .toplist2 li:nth-child(2) a span {
+      display: block;
+      width: 7px;
+      height: 7px;
+      margin: 5px 5px 0 5px !important; }
+
+#top .toplist2 li:nth-child(3) {
+  height: 30px;
+  line-height: 30px; }
+
+#top .toplist2 li:nth-child(4) {
+  width: 70px;
+  padding-left: 10px;
+  height: 30px;
+  position: relative; }
+  #top .toplist2 li:nth-child(4) a {
+    margin-top: 8px;
+    display: flex; }
+    #top .toplist2 li:nth-child(4) a span {
+      display: block;
+      width: 7px;
+      height: 7px;
+      margin: 5px 5px 0 5px; }
+
+.toplist-3 {
+  display: none;
+  position: absolute;
+  background: #ffffff;
+  top: 30px;
+  z-index: 1;
+  border: 1px solid #CECECE;
+  border-top: none;
+  padding-left: 0;
+  padding-right: 0;
+  left: -152px;
+  width: 230px;
+  height: 230px;
+  overflow: hidden; }
+  .toplist-3 img {
+    border: none; }
+
+.toplist-4 {
+  width: 210px;
+  display: none;
+  position: absolute;
+  top: 30px;
+  background: #fff;
+  overflow: hidden;
+  z-index: 1;
+  height: 200px;
+  font-size: 12px;
+  border: 1px solid #CECECE; }
+
+.toplist-4 div {
+  width: 200px;
+  height: 80px;
+  padding-left: 10px;
+  padding-right: 10px; }
+  .toplist-4 div p {
+    margin-top: 16px;
+    margin-top: 0;
+    width: 210px;
+    height: 14px;
+    line-height: 14px;
+    font-style: inherit;
+    font-weight: 900; }
+  .toplist-4 div a {
+    display: block;
+    height: 12px;
+    float: left;
+    margin-right: 10px; }
+
+.kefu {
+  padding-left: 70px;
+  color: #fff;
+  background: #dd00a7;
+  display: block;
+  line-height: 25px;
+  height: 25px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 400; }
+
+.toplist-6 {
+  position: absolute;
+  background: #ffffff;
+  display: none;
+  top: 30px;
+  border: 1px solid #CECECE;
+  border-top: none;
+  left: -66px;
+  width: 161px;
+  height: 203px;
+  overflow: hidden; }
+  .toplist-6 img {
+    border: none;
+    width: 161px;
+    height: 204px;
+    display: block; }
+
+#top .toplist2 li:nth-child(5) {
+  width: 99px;
+  height: 30px;
+  position: relative; }
+  #top .toplist2 li:nth-child(5) a {
+    margin-top: 8px;
+    display: flex; }
+    #top .toplist2 li:nth-child(5) a span:nth-child(1) {
+      margin: 1px 3px 0 10px; }
+    #top .toplist2 li:nth-child(5) a span:nth-child(2) {
+      display: block;
+      width: 7px;
+      height: 7px;
+      margin: 5px 5px 0 5px; }
+
+#top .toplist2 li:nth-child(6) {
+  height: 30px;
+  width: 70px;
+  padding-left: 10px;
+  position: relative; }
+  #top .toplist2 li:nth-child(6) a {
+    margin-top: 8px;
+    display: flex; }
+    #top .toplist2 li:nth-child(6) a span {
+      display: block;
+      width: 7px;
+      height: 7px;
+      margin: 5px 5px 0 5px; }
+
+#top .toplist2 li:nth-child(7) {
+  height: 30px;
+  width: 97px;
+  position: relative; }
+  #top .toplist2 li:nth-child(7) a {
+    margin-top: 8px;
+    display: flex; }
+    #top .toplist2 li:nth-child(7) a span:nth-child(1) {
+      margin: 0 3px 0 10px; }
+    #top .toplist2 li:nth-child(7) a span:nth-child(2) {
+      display: block;
+      width: 7px;
+      height: 7px;
+      margin: 5px 5px 0 5px; }

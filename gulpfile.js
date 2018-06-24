@@ -22,17 +22,23 @@ gulp.task("sass",function(){
 	.pipe(gulp.dest("dist/css"))
 	.pipe(connect.reload());
 });
+gulp.task("copy-font",function(){
+	gulp.src("font/**").pipe(gulp.dest("dist/font"))
+	.pipe(connect.reload());//易忘点
+});
 gulp.task("server",function(){
 	connect.server({
 		root:'dist',
 		livereload:true
 		});
 })
+
 gulp.task("watch",function(){
 	gulp.watch("html/**",["copy-html"]);
 	gulp.watch("img/**",["copy-img"]);
 	gulp.watch("css/**",["sass"]);
 	gulp.watch("js/**",["copy-js"]);
+	gulp.watch("font/**",["copy-font"]);
 	
 })
 gulp.task("default",["watch","server"]);

@@ -1,0 +1,140 @@
+body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend{margin:0; padding:0;}
+ul,li,ol{list-style:none;}
+img,fieldset{border:0; }
+img{display:block;}
+a{text-decoration:none; color:#333;}
+h1,h2,h3,h4,h5,h6{font-weight:100;}
+body{ font-family:"微软雅黑";}
+input,a{outline:none;}
+#wrap-footer{
+    width: 100%;
+    background: #f7f7f7;;
+}
+#footer{
+//  position: relative;
+    width: 1200px;
+    height: 250px;
+    margin: 0 auto;
+    padding: 20px 0 0;
+    background: #f7f7f7;
+}
+#footer span{
+    display: inline-block;
+    width: 285px;
+    height: 45px;
+    padding: 0 50px 40px 0;
+}
+#footer span img{
+    margin-right:10px;
+    float: left;
+}
+#footer span p{
+    float: left;
+    width: 210px;
+    height: 45px;
+    float: left;
+    strong{
+        display: block;
+        width: 210px;
+        height: 25px;
+        line-height: 25px;
+    }
+    a{
+        font-size: 12px;
+    }
+}
+.footer-right{
+    margin-right: 0;
+    float: right;
+    width: 250px;
+    height:90px;
+}
+.footer-right em{
+    float: right;
+    position: relative;
+}
+.footer-top-1{
+    margin: 0;
+    padding: 0;
+    display: block;
+    width:150px;
+    height:150px;
+    position: absolute;
+    left: -50px;
+    bottom: 54px;
+    z-index: 1000;
+    padding: 10px;
+//  border: 1px solid #eee;
+    display: none;
+    background: #fff;
+}
+.footer-right a img{
+    width: 90px;
+    height: 90px;
+   float: right;
+}
+#footer ul{
+    width: 1200px;
+    height: 22px;
+}
+#footer ul a{
+    display: inline-block;
+    float: left;
+    padding: 0 13px 0 0;
+    color:black;
+//  white-space: nowrap;
+    font-size: 14px;
+}
+#footer p{
+    height: 22px;
+    font-size: 12px;
+    color:#666666;
+}
+.footer-end{
+    border-top: 1px solid #CECECE;
+    padding-top: 14px;
+}
+.footer-end img{
+    float: left;
+    margin-right: 5px;
+}
+.footer-end a{
+    display: inline-block;
+    display: inline-block;
+    width: 135px!important;
+    height: 36px;
+    b{
+        width: 95px!important;
+        float: left;
+        font-size: 14px;
+    }
+}
+.footer-end a:last-child{
+    width: 180px!important;
+     b{
+        width:135px!important;
+        float: left;
+        font-size: 14px;
+    }
+}
+.footer-end a:nth-child(3){
+    b{
+        margin-top: 10px;
+        height: 27px;
+    }
+    
+}
+.footer-end a:nth-child(4){
+    b{
+        margin-top: 10px;
+        height: 27px;
+    }
+    
+}
+.footer-end a:nth-child(5){
+    b{
+        margin-top: 10px;
+        height: 27px;
+    }
+    
+}
