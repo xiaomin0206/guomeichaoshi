@@ -143,18 +143,83 @@ $(function () {
 			$(this).css({ "background": "#f5f5f5", "border": "none" });
 		}
 	});
+	var j = 0;
 	$(".list-1").eq(0).show().siblings().hide();
 	$(".btn_right1").click(function () {
-		if (i == 3) {
-			i = -1;
+		if (j == 3) {
+			j = -1;
 		}
-		i++;
+		j++;
+		//					console.log(j)
+		move1();
 	});
 
 	$(".btn_left1").click(function () {
-		if (i == 0) {
-			i = 4;
+		if (j == 0) {
+			j = 4;
 		}
-		i--;
+		j--;
+		move1();
 	});
+	function move1() {
+		$(".list-1").eq(j).fadeIn(300).siblings(300).fadeOut();
+	}
+
+	var q = 0;
+	$(".num2").hover(function () {
+		q = $(this).index();
+		move();
+	});
+	function move() {
+		$(".list2").eq(q).fadeIn(300).siblings(300).fadeOut();
+		$(".num2").eq(q).addClass("bg").siblings().removeClass("bg");
+	}
+	$(".floor1-bottom-middle").find("li").each(function () {
+		$(this).hover(function () {
+			$(".yincang").css("display", "block");
+		}, function () {
+			$(".yincang").css("display", "none");
+		});
+	});
+	$(window).scroll(function () {
+		var scrollTop = $(this).scrollTop();
+		var scrollTop1 = $("#like").offset().top;
+		if (scrollTop >= scrollTop1) {
+			$("#wrap-3").css({ "position": "fixed", "top": 0 });
+		} else {
+			$("#wrap-3").css({ "position": "relative" });
+		}
+	});
+
+	//				var $floor-top = $(".floor-top").find("a");
+	//				var $floor1 = $("#floor1");
+	//				var flag=true;
+	//				$(window).scroll(function(){
+	//					var scrollTop = $(this).scrollTop();
+	//					var scrollTop1 = $("#like").offset().top;
+	//					if(scrollTop>=scrollTop1){
+	//						$("#wrap-3").css({"position":"fixed","top":0})
+	//					}else{
+	//						$("#wrap-3").css({"position":"relative"})
+	//					}
+	//					if(flag){
+	//						$floor1.each(function(){
+	//							if(scrollTop > $(this).offset().top - $(this).outerHeight()/2){
+	////								console.log($(this))
+	//								var index = $(this).index();
+	//								$floor-top.eq(index).addClass("hover").siblings().removeClass("hover");
+	//							}
+	//						})
+	//					}
+	//					
+	//				})
+	//				$floor-top.click(function(){
+	//					flag = false;
+	//					var index = $(this).index();
+	//					$(this).addClass("hover").siblings().removeClass("hover");
+	//					$("body,html").stop().animate({"scrollTop":$floor1.eq(index).offset().top},500,function(){
+	//						flag = true;
+	//					});
+	//
+	//})
 });

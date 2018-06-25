@@ -1,0 +1,120 @@
+#header {
+  width: 990px;
+  height: 60px;
+  padding: 30px 0;
+  margin: 0 auto;
+  background: #ffffff;
+  line-height: 120px;
+  margin-bottom: 25px; }
+
+#regist {
+  position: relative;
+  margin: 0 auto;
+  width: 990px;
+  height: 42px; }
+  #regist ul {
+    width: 500px; }
+  #regist span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+    float: right;
+    font-size: 12px; }
+
+#regist ul a {
+  font-weight: 900;
+  display: inline-block;
+  width: 152px;
+  height: 42px;
+  line-height: 42px;
+  border-left: 1px solid #CECECE;
+  border-right: 1px solid #CECECE;
+  border-bottom: none;
+  color: #cc0000;
+  text-align: center;
+  font-size: 12px;
+  border-top: 2px solid #cc0000; }
+  #regist ul a:nth-child(1) {
+    margin-left: 150px; }
+
+#regist ul a:nth-child(2) {
+  color: black;
+  background: #CECECE;
+  border-top: none; }
+
+#content {
+  width: 990px;
+  height: 522px;
+  border: 1px solid #CECECE;
+  padding-top: 40px;
+  margin: 0 auto; }
+
+.content-1 {
+  display: flex;
+  height: 38px;
+  margin-bottom: 26px; }
+  .content-1 span:nth-child(1) {
+    font-size: 16px;
+    text-align: right;
+    color: #888888;
+    float: left;
+    height: 38px;
+    line-height: 38px;
+    display: block;
+    width: 150px; }
+  .content-1 input {
+    margin: 0;
+    padding: 0;
+    height: 34px !important;
+    display: block;
+    width: 298px; }
+
+.content-11 {
+  position: relative;
+  width: 452px;
+  height: 38px; }
+
+.content-1 p {
+  font-size: 16px;
+  color: #888888;
+  height: 18px;
+  display: block;
+  font-size: 12px;
+  padding: 9px 5px 9px 5px;
+  line-height: 18px;
+  position: absolute;
+  border: 1px solid #ccc;
+  white-space: nowrap; }
+
+.require {
+  left: 670px;
+  display: none !important; }
+
+.user {
+  display: none !important;
+  left: 670px; }
+
+.content-1-1 {
+  padding-left: 150px; }
+
+.error1 {
+  left: 670px;
+  display: none; }
+
+.content-1-1 input {
+  background-color: #ff5757;
+  border: 0 none;
+  color: #fff;
+  cursor: pointer;
+  height: 40px;
+  text-align: center;
+  margin-top: 5px; }
+
+#footer {
+  width: 990px !important; }
+
+.footer-end {
+  width: 990px !important;
+  border-top: 1px solid #CECECE;
+  padding-top: 14px; }
