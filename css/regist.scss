@@ -26,7 +26,9 @@
         font-size: 12px;
     }
 }
-
+#regist span>a{
+    color: blue;
+}
 #regist ul a{
     font-weight: 900;
     display:inline-block;
@@ -57,13 +59,44 @@
     padding-top: 40px;
     margin: 0 auto;
 }
-.content-1{
-    
-    display: flex;
-    height: 38px;
-    margin-bottom: 26px;
-    span{
-        &:nth-child(1){
+#tishi{
+    height: 36px;
+    font-size: 16px;
+    line-height: 36px;
+    border: 1px solid #CECECE;
+    display: none;
+//  display: block;
+}
+#tishi1{
+    height: 36px;
+    font-size: 16px;
+    line-height: 36px;
+    border: 1px solid #CECECE;
+    display: none;
+//  display: block;
+}
+#tishi2{
+    height: 36px;
+    font-size: 16px;
+    line-height: 36px;
+    border: 1px solid #CECECE;
+    display: none;
+}
+#tishi3{
+    height: 36px;
+    font-size: 16px;
+    line-height: 36px;
+    border: 1px solid #CECECE;
+    display: none;
+}
+.content-11>input{
+        margin: 0;
+        padding: 0;
+        height: 34px!important;
+//      display: block;
+        width:298px;
+}
+.content-11 span:first-child{
             font-size: 16px;
             text-align: right;
             color: #888888;
@@ -72,50 +105,16 @@
             line-height: 38px;
             display: block;
             width: 150px;
-        }
-        
-        
-    }
-    input{
-        margin: 0;
-        padding: 0;
-        height: 34px!important;
-        display: block;
-        width:298px;
-    }
 }
 .content-11{
-    position: relative;
-    width:452px;
+    display: flex;
+    margin-bottom: 26px;
+//  width:452px;
     height: 38px;
 }
-.content-1 p{
-            font-size: 16px;
-            color: #888888;
-            height:18px;
-            display: block;
-            font-size: 12px;
-            padding: 9px 5px 9px 5px;
-            line-height:18px;
-            position: absolute;
-            border: 1px solid #ccc;
-            white-space: nowrap;
-        }
-.require{
-    left:670px;
-    display: none!important;
-}
-.user{
-            display: none!important;
-            left:670px;
-        }
 .content-1-1{
     padding-left: 150px;
     
-}
-.error1{
-    left:670px;
-    display:none;
 }
 .content-1-1 input{
     background-color: #ff5757;

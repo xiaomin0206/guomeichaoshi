@@ -14,7 +14,6 @@ input,a{outline:none;}
     display: flex;
     width: 1200px;
     height: 120px;
-    border: 1px solid #cecece;
     .search-left{
         margin-top: 28px;
         margin-right: 210px;
@@ -22,7 +21,6 @@ input,a{outline:none;}
     .search-middle{
         margin-top: 28px;
         width: 500px;
-//      border: 1px solid red;
         .search-middle-top{
             width: 500px!important;
             margin-bottom:5px;
@@ -330,11 +328,11 @@ a:hover{
                 display: block;
             
             }
-            .btn_left {
+            .btn_left1{
                 left:0px;
                 
             }
-            .btn_right{
+            .btn_right1{
                 right:0px;
             }
             .nums{
@@ -518,7 +516,7 @@ a:hover{
         float: left;
 //      border: 1px solid red;
         border: none;
-        width: 128px;
+        width: 129px;
         margin-right: 1px;
         height: 50px;
         background:#f5f5f5;
@@ -542,6 +540,11 @@ a:hover{
             font-size: 12px;
         }
     }
+}
+.pinpai-right-ul li.huaguo{
+    background:#ffffff;
+    border:1px solid #cecece;
+    border-bottom:none;
 }
 .pinpai-1{
     font-size: 14px;
@@ -728,11 +731,10 @@ a:hover{
     height: 30px;
     float: left;
     width: 94px;
-//  border: 1px solid green;
+
 }
 
 .floor-top li a{
-//  background: #CECECE;
     font-size: 16px;
     color: #fff;
     display: block;
@@ -744,14 +746,14 @@ a:hover{
        color: #fff!important; 
     }
 }
-.floor-top li a.hover{
+.floor-top li.hover{
     background: #CECECE;
 }
 ///////////////////////////////////休闲零食
 #wrap-4{
     width: 100%;
 }
-#floor1{
+.floor1{
     width: 1200px;
     height: 558px;
     margin:30px auto 0;

@@ -23,62 +23,40 @@
 		</div>
 		<div id="content">
 			<form action="">
-				<div class="content-1">
 					<div class="content-11">
-						<span>用户名：</span>
+						<span class="user">用户名：</span>
 						<input  name="username" id="username" value=""placeholder="4-20个字符，支持汉字、字母、数字及“-”、“_”组成" />
+						<span id="tishi">
+							用户名只能由汉字、字母、数字及“-”、“_”组成
+						</span>
 					</div>
-					
-					<p class="require">
-						4-20个字符，支持汉字、字母、数字及“-”、“_”组成
-					</p>
-					<div class="error1">
-						用户名只能由汉字、字母、数字及“-”、“_”组成
-					</div>
-					<p class="user">请输入用户名</p>
-				</div>
-				<div class="content-1">
 					<div class="content-11">
 						<span>设置密码：</span>
 						<input type="text" name="mima" id="mima" value="" placeholder="6-20个字符，建议由字母，数字与符号两种以上组成"/>
+						<span id="tishi1">
+							6-20个字符，字母，数字与符号两种以上组成
+						</span>
 					</div>
-					<p class="require">
-						6-20个字符，建议由字母，数字与符号两种以上组成
-					</p>
-					<p class="user">请输入密码</p>
-				</div>
-				<div class="content-1">
 					<div class="content-11">
 						<span>确认密码：</span>
-						<input type="text" name="" id="" value="" />
+						<input type="text" name="" id="mima1" value="" />
+						<span id="tishi2">
+							两次密码不一致，请重新输入
+						</span>
 					</div>
-					<p class="require">
-						请确认密码
-					</p>
-					<p class="user">两次密码不一致</p>
-				</div>
-				<div class="content-1">
 					<div class="content-11">
 						<span>手机号码：</span>
-						<input type="text" name="" id="" value="" />
+						<input type="text" name="" id="phone" value="" />
+						<span id="tishi3">
+							输入格式不正确，请重新输入
+						</span>
 					</div>
-					<p class="require">
-						号码不符合格式
-					</p>
-					<p class="user">
-						手机号不能为空
-					</p>
-				</div>
-				<div class="content-1">
-					<span>滑动验证：</span>
-					<input type="text" name="" id="" value="" />
-				</div>
-				<div class="content-1">
+				<div class="content-11">
 					<span>推荐码（选填）：</span>
 					<input type="text" name="" id="" value="" placeholder="填写推荐人 推荐码 帮好友赚收入"/>
 				</div>
 				<div class="content-1 content-1-1">
-					<input type="text" name="" id="" value="" placeholder="用户注册"/>
+					<input type="text" name="" id="zhuce" value="" placeholder="用户注册"/>
 				</div>
 			</form>
 		</div>

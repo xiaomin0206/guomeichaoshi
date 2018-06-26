@@ -45,7 +45,7 @@
     margin: 0 auto;
     width:990px;
     height:480px;
-    border: 1px solid green;
+//  border: 1px solid green;
     
 }
 #denglu .content{
@@ -56,7 +56,7 @@
     position: relative;
     background: #fff;
     overflow: visible;
-    border: 1px solid red;
+//  border: 1px solid red;
 }
 .content ul{
     width: 350px;
@@ -73,11 +73,14 @@
         width: 174px;
         height: 54px;
         position: relative;
+        cursor: pointer;
         
     }
 }
 .content .content1{
-    border: 1px solid red;
+//  display: none;
+    display: block;
+//  border: 1px solid red;
     width: 310px;
     height: 240px;
     min-height: 241px;
@@ -123,6 +126,8 @@
     font-size: 12px;
 }
 .content .content2{
+    position: absolute;
+    bottom: 0;
     width: 308px;
     height: 32px;
     overflow: hidden;
@@ -130,7 +135,7 @@
     background-color: #fcfcfc;
     padding: 9px 20px;
     color: #a5a5a5;
-    border: 1px solid #f0f0f0;
+//  border: 1px solid #f0f0f0;
 }
 .content .content2 a{
     float: left;
@@ -148,4 +153,79 @@
                 color: red;
                 text-decoration: underline;
             }
+}
+.content11{
+    display: none;
+//  border: 1px solid red;
+    width: 310px;
+    height: 240px;
+    min-height: 241px;
+    padding: 25px 11px 0 19px;
+    text-align: center;
+//  position: relative;
+    position: absolute;
+}
+.content11>form{
+    width: 300px;
+    height: 230px;
+    margin: 5px 10px 0;
+//  border: 1px solid red;
+}
+.content11>form>input{
+    padding-left: 10px;
+    width:290px;
+    height: 40px;
+    margin-bottom: 12px;
+//  border: 1px solid #CECECE;
+}
+.content11-1{
+    font-size: 12px;
+    width: 300px;
+    height: 20px;
+    padding: 10px 0;
+//  border: 1px solid red;
+}
+.content11-1>div{
+    float: left;
+    width: 70px;
+    height:20px;
+    
+}
+.content11-1>a{
+    float: right;
+    margin-left: 10px;
+}
+.mianfei{
+    color: blue;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.mianfei1:hover{
+    color: red;
+    text-decoration: underline;
+}
+.login{
+    height:42px;
+    background: red;
+    font-size: 20px;
+    color: white;
+}
+.content11 form>a{
+    font-size: 14px;
+    &:hover{
+        color: red;
+        text-decoration: underline;
+    }
+    
+}
+#footer{
+   
+    width: 990px!important;
+    
+}
+.footer-end{
+    width: 990px!important;
+    border-top: 1px solid #CECECE;
+    padding-top: 14px;
 }

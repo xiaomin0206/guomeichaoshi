@@ -344,6 +344,7 @@ body {
   font-weight: 400; }
 
 .toplist-6 {
+  z-index: 1;
   position: absolute;
   background: #ffffff;
   display: none;
