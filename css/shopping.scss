@@ -1,0 +1,156 @@
+#wrap11{
+    width: 100%;
+}
+#liebiao{
+    font-size: 14px;
+    color: black;
+    width: 990px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.container{
+    
+    height: 44px;
+    line-height: 44px;
+    background: #eee;
+    width: 988px;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.container div:nth-child(1){
+    float: left;
+    width:30px;
+    height:30px;
+    position: relative;
+    padding-left:10px;
+    input{
+        position: absolute;
+        border: none;
+        display: block;
+       width: 16px;
+        height:16px;
+        bottom: 0;
+        
+    }
+}
+.container div:nth-child(2){
+    float: left;
+    width:91px;
+    height:44px;
+}
+.container div:nth-child(3){
+    float: left;
+    width:389px;
+    height:44px;
+}
+.container div:nth-child(4){
+    float: left;
+    width:155px;
+    height:44px;
+}
+.container div:nth-child(5){
+    float: left;
+    width:80px;
+    height:44px;
+}
+.container div:nth-child(6){
+    float: left;
+    width:154px;
+    height:44px;
+}
+.container div:nth-child(7){
+    float: left;
+    width:79px;
+    height:44px;
+}
+.container1{
+    border: 1px solid #CECECE;
+    padding: 20px 0;
+    height: 82px;
+    width: 990px;
+}
+.container1 div:nth-child(1){
+    float: left;
+    width:40px;
+    padding-left:10px;
+    input{
+        display: block;
+        width: 16px;
+        height:16px;
+        bottom: 0;
+        
+    }
+}
+.container1 div:nth-child(2){
+    border: 1px solid #cecece;
+    float: left;
+    width: 82px;
+    height: 82px;
+    margin-right: 5px;
+}
+.container1 div:nth-child(3){
+    overflow: hidden;
+    float: left;
+    width: 208px;
+    height:38px;
+}
+.container1 div:nth-child(4){
+    height: 30px;
+    float: left;
+    width:160px;
+}
+.container1 div:nth-child(5){
+    padding-left: 24px;
+    float: left;
+    width: 130px;
+    height:47px;
+}
+.container1 div:nth-child(6){
+    
+    display: flex;
+    padding-top: 0;
+    float: left;
+    width:80px;
+    height: 22px;
+    border: 1px solid #CECECE;
+    text-align: center;
+    input{
+        text-align: center;
+        float: left;
+        display: block;
+        border: none;
+        width:35px;
+        height: 20px;
+        border: 1px solid #CECECE;
+        border-top: none;
+    }
+    
+}
+.jia1{
+        float: left;
+       width: 17px; 
+       height: 22px;
+    }
+  .jian1{
+       float: left;
+       width: 17px; 
+       height: 22px;
+    }  
+.container1 div:nth-child(7){
+    font-weight: 700;
+    padding-left: 24px;
+    float: left;
+    width: 130px;
+    height: 39px;
+}
+.container1 div:nth-child(8){
+    float: left;
+    width: 79px;
+    height:42px;
+    a{
+        display: block;
+    }
+}
+
