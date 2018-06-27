@@ -144,11 +144,11 @@
     width:500px;
     
 }
-#list img{      width: 54px;
-                height: 54px;
-                display:block;
-                border: none;
-            }
+//#list img{      width: 54px;
+//              height: 54px;
+//              display:block;
+//              border: none;
+//          }
             #zoomBox{
                 position: relative;
                 width:360px;
@@ -166,6 +166,7 @@
             }
             #zoom{
                 display: none;
+//              display:block;
                 position: absolute;
                 width: 180px;
                 height:180px;
@@ -188,12 +189,17 @@
                 height:720px;
             }
             #list>img{
+                display: block;
                 width:54px;
                 height:54px;
                 float: left;
                 border: none;
                 border: 1px solid #CECECE;
                 margin: 10px;
+                
+            }
+            #list>img:first-child{
+                margin-left:none!important;
             }
 .fangdajing-right{
     padding-top:50px;
@@ -201,6 +207,12 @@
     width: 200px;
     height:360px;
 //  border: 1px solid green;
+    p{
+        height:50px;
+        width: 200px;
+        line-height: 25px;
+        overflow: hidden;
+    }
     span{
         display: block;
         height:50px;

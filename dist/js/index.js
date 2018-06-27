@@ -150,11 +150,19 @@ $(function () {
 		$(".num2").eq(q).addClass("bg").siblings().removeClass("bg");
 	}
 
-	$(".floor1-bottom-middle").find("li").mouseover(function () {
+	//$(".floor1-bottom-middle").find("li").mouseover(function(){
+	//	var index=$(this).index()
+	//	$(".yincang").eq(index).css("display","block")
+	//})
+	//$(".floor1-bottom-middle").find("li").mouseout(function(){
+	//	var index=$(this).index()
+	//	$(".yincang").eq(index).css("display","none")
+	//})
+	$(".floor1-bottom-middle").find("li").on("mouseover", function () {
 		var index = $(this).index();
 		$(".yincang").eq(index).css("display", "block");
 	});
-	$(".floor1-bottom-middle").find("li").mouseout(function () {
+	$(".floor1-bottom-middle").find("li").on("mouseout", function () {
 		var index = $(this).index();
 		$(".yincang").eq(index).css("display", "none");
 	});

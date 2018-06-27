@@ -1,4 +1,41 @@
-	var oZoomBox = document.getElementById("zoomBox"),
+	var obj=JSON.parse(getCookie("cart"));
+//	console.log(obj);
+$(function(){
+	var url = "http://datainfo.duapp.com/shopdata/getGoods.php?callback=?"
+	$.getJSON(url,function(data){
+		console.log(data)
+		var str=""
+		var str1=""
+		for(var i=0;i<data.length;i++){
+			if(data[i].goodsID==obj){
+				console.log(data[i])
+				str=`<div id="zoomBox">
+						<div id="midArea">
+							<img src="${data[i].goodsListImg}"/>
+							<div id="zoom"></div>
+						</div>
+						<div id="bigArea">
+							<img class="bigtu" src="${data[i].goodsListImg}"/>
+						</div>
+					</div>`
+//					
+				
+					str1=`<p>${data[i].goodsName}</p>
+					<span>国美价：￥<em>${data[i].price}</em></span>
+					<div class="shuliang">
+						<input type="" name="" id="" value="" />
+						<a href="">+</a>
+						<a href="">-</a>
+					</div>
+					<input type="button" name="" id="" value="加入购物车" />`
+				
+			}
+		}
+		$(".fangdajing-left").append(str)
+		$(".fangdajing-right").append(str1)
+})
+})	
+			var oZoomBox = document.getElementById("zoomBox"),
 				oMidArea = document.getElementById("midArea"),
 				oZoom = document.getElementById("zoom"),
 				oMidImg = oMidArea.children[0],
@@ -50,13 +87,12 @@
 				
 				
 			}
-			for(var j=0;j<Img.length;j++){
-				(function(j){
-					Img[j].onmouseover=function(){
-						oMidImg.src="img/0"+(j+2)+".png";
-						oBigImg.src="img/0"+(j+2)+".png";
-				}
-				})(j);
-				
-				
-			}
+//			for(var j=0;j<Img.length;j++){
+//				(function(j){
+//					Img[j].onmouseover=function(){
+//						oMidImg.src="img/0"+(j+2)+".png";
+//						oBigImg.src="img/0"+(j+2)+".png";
+//				}
+//				})(j);
+//			}
+

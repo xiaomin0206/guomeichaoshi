@@ -126,12 +126,6 @@
   float: left;
   width: 500px; }
 
-#list img {
-  width: 54px;
-  height: 54px;
-  display: block;
-  border: none; }
-
 #zoomBox {
   position: relative;
   width: 360px;
@@ -171,6 +165,7 @@
   height: 720px; }
 
 #list > img {
+  display: block;
   width: 54px;
   height: 54px;
   float: left;
@@ -178,11 +173,19 @@
   border: 1px solid #CECECE;
   margin: 10px; }
 
+#list > img:first-child {
+  margin-left: none !important; }
+
 .fangdajing-right {
   padding-top: 50px;
   float: left;
   width: 200px;
   height: 360px; }
+  .fangdajing-right p {
+    height: 50px;
+    width: 200px;
+    line-height: 25px;
+    overflow: hidden; }
   .fangdajing-right span {
     display: block;
     height: 50px;

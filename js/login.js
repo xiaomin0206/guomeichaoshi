@@ -21,6 +21,7 @@ $(function(){
 						}else if(data==2){
 							alert("用户名密码不符")
 						}else{
+							$.cookie("username",data.userID,{expires:7,path:"/"});
 							location.assign("index.html");
 						}
 						
