@@ -164,6 +164,10 @@
   width: 720px;
   height: 720px; }
 
+#list {
+  width: 500px;
+  height: 80px; }
+
 #list > img {
   cursor: pointer;
   display: block;

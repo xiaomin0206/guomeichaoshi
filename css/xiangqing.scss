@@ -142,13 +142,7 @@
 .fangdajing-left{
     float: left;
     width:500px;
-    
 }
-//#list img{      width: 54px;
-//              height: 54px;
-//              display:block;
-//              border: none;
-//          }
             #zoomBox{
                 position: relative;
                 width:360px;
@@ -187,6 +181,10 @@
                 position: absolute;
                 width:720px;
                 height:720px;
+            }
+            #list{
+                width:500px;
+                height:80px;
             }
             #list>img{
                 cursor: pointer;

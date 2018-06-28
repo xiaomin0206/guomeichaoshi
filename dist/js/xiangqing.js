@@ -8,34 +8,42 @@ $(function () {
 	var url = "http://datainfo.duapp.com/shopdata/getGoods.php?callback=?";
 	$.getJSON(url, { goodsID: goodsid }, function (data) {
 		//		data = JSON.parse(data);
+
 		var xiaotu = JSON.parse(data[0].imgsUrl);
-		//		console.log(xiaotu)
-		//		console.log(JSON.parse(data[0].imgsUrl))
 		var str = "";
 		var str1 = "";
-		str = "<div id=\"zoomBox\">\n\t\t\t\t\t\t<div id=\"midArea\">\n\t\t\t\t\t\t\t<img src=\"" + data[0].goodsListImg + "\"/>\n\t\t\t\t\t\t\t<div id=\"zoom\"></div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div id=\"bigArea\">\n\t\t\t\t\t\t\t<img class=\"bigtu\" src=\"" + data[0].goodsListImg + "\"/>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div id=\"list\">\n\t\t\t\t\t\t<img src=\"" + xiaotu[0] + "\">\n\t\t\t\t\t\t<img src=\"" + xiaotu[1] + "\">\n\t\t\t\t\t\t<img src=\"" + xiaotu[2] + "\">\n\t\t\t\t\t</div>";
+		var str2 = "";
+		str = "<div id=\"zoomBox\">\n\t\t\t\t\t\t<div id=\"midArea\">\n\t\t\t\t\t\t\t<img src=\"" + data[0].goodsListImg + "\"/>\n\t\t\t\t\t\t\t<div id=\"zoom\"></div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div id=\"bigArea\">\n\t\t\t\t\t\t\t<img class=\"bigtu\" src=\"" + data[0].goodsListImg + "\"/>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>";
+		$(".fangdajing-left").append(str);
+		$.each(xiaotu, function (index, item) {
+			str2 += "<img src=\"" + item + "\">";
+		});
+		$("#list").append(str2);
 
 		str1 = "<p>" + data[0].goodsName + "</p>\n\t\t\t\t\t<span>\u56FD\u7F8E\u4EF7\uFF1A\uFFE5<em>" + data[0].price + "</em></span>\n\t\t\t\t\t<div class=\"shuliang\">\n\t\t\t\t\t\t<input type=\"\" name=\"\" id=\"shuliang1\" value=\"1\" />\n\t\t\t\t\t\t<a href=\"###\" class=\"jia\">+</a>\n\t\t\t\t\t\t<a href=\"###\" class=\"jian\">-</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<input type=\"button\" name=\"\" id=\"car\" value=\"\u52A0\u5165\u8D2D\u7269\u8F66\" />";
 
-		$(".fangdajing-left").append(str);
 		$(".fangdajing-right").append(str1);
 		$("#car").click(function () {
-			$.get("http://datainfo.duapp.com/shopdata/updatecar.php", { userID: $.cookie("username"), goodsID: data[0].goodsID }, function (data) {
+			$.get("http://datainfo.duapp.com/shopdata/updatecar.php", { userID: $.cookie("username"), goodsID: data[0].goodsID, number: $("#shuliang1").val() }, function (data) {
 				console.log(data);
 				if (data == 0) {
 					alert("添加失败");
 				}
 				if (data == 1) {
-					alert("添加成功");
+					location.assign("shopping.html");
 				}
 			});
 		});
-	});
-	$("#list").find("img").on("click", function () {
-		console.log($(this));
-		var index = $(this).index();
-		console.log(index);
-		$("#midArea").src = $(this).src;
+		$("#list img").on("mouseover", function () {
+			var src1 = $(this)[0].src;
+			$("#midArea img")[0].src = src1;
+			$("#bigArea img")[0].src = src1;
+		});
+		//	$("#car").click(function(){
+		//	var value12=$("#shuliang1").val()
+		//	console.log(value12)
+		////	$(".cart11").val(value12)
+		//})
 	});
 });
 window.onload = function () {

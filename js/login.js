@@ -15,6 +15,7 @@ $(function(){
 					async:true,
 					data:{"status":"login","userID":userName,"password":passWord},
 					success:function(data){
+						data=JSON.parse(data);
 						console.log(data);
 						if(data==0){
 							alert("用户名不存在")

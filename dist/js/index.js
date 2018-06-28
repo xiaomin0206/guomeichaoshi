@@ -1,6 +1,28 @@
 "use strict";
 
 $(function () {
+	$.getJSON("http://datainfo.duapp.com/shopdata/getCar.php?callback=?", { userID: $.cookie("username") }, function (data) {
+		var number = 0;
+		$.each(data, function (index, item) {
+			number += Number(item.number);
+		});
+		$(".cartt").text(number);
+		if (number > 0) {
+			$(".shopping1").text("快到购物车里购买吧");
+		} else {
+			$(".shopping1").text("购物车空了");
+		}
+		//		console.log(number);
+	});
+	$.get("http://datainfo.duapp.com/shopdata/getclass.php", function (data) {
+		data = JSON.parse(data);
+		//						console.log(data);
+		var str = "";
+		$.each(data, function (index, item) {
+			str += "<li><a href=\"list.html?classID=" + item.classID + "\">" + item.className + "</a></li>";
+		});
+		$(".nav-list").append(str);
+	});
 	$(".select1").hover(function () {
 		$(".toplist-1-1").css("display", "block");
 		$(this).css({ "background": "white", "height": 31, "border": "1px solid #cecece", "border-bottom": "none" });
@@ -62,7 +84,7 @@ $(function () {
 	$(".num").hover(function () {
 		clearInterval(timer);
 		d = $(this).index();
-		move();
+		move2();
 	});
 	//鼠标划过
 	$("#box").mouseover(function () {
@@ -73,27 +95,26 @@ $(function () {
 		show();
 	});
 	//点击换图	
-	$(".btn_right1").click(function () {
+	$(".btn_right2").click(function () {
 		clearInterval(timer);
-
 		if (d == 6) {
 			d = -1;
 		}
 		d++;
 		console.log(d);
-		move();
+		move2();
 	});
 
-	$(".btn_left1").click(function () {
+	$(".btn_left2").click(function () {
 		clearInterval(timer);
 		if (d == 0) {
 			d = 7;
 		}
 		d--;
-		move();
+		move2();
 	});
-	function move() {
-		$(".list").eq(d).fadeIn(300).siblings(300).fadeOut();
+	function move2() {
+		$(".list").eq(d).fadeIn(300).siblings().fadeOut(300);
 		$(".num").eq(d).addClass("bg").siblings().removeClass("bg");
 	}
 	function show() {
@@ -102,7 +123,7 @@ $(function () {
 			if (d == 7) {
 				d = 0;
 			}
-			move();
+			move2();
 		}, 2000);
 	}
 	//$(".pinpai-right-ul").find("li").hover(function(){
@@ -141,29 +162,33 @@ $(function () {
 	}
 
 	var q = 0;
-	$(".num2").hover(function () {
-		q = $(this).index();
+	$(".num2").on("mouseover", function () {
+		var index = $(this).index(".num2");
+		q = index;
+		//					q = $(this).index();
 		move();
 	});
 	function move() {
-		$(".list2").eq(q).fadeIn(300).siblings(300).fadeOut();
+		$(".list2").eq(q).fadeIn(300).siblings().fadeOut(300);
 		$(".num2").eq(q).addClass("bg").siblings().removeClass("bg");
 	}
 
-	//$(".floor1-bottom-middle").find("li").mouseover(function(){
+	//$(".floor1-bottom-middle").find("li").on("mouseover",function(){
 	//	var index=$(this).index()
 	//	$(".yincang").eq(index).css("display","block")
 	//})
-	//$(".floor1-bottom-middle").find("li").mouseout(function(){
+	//$(".floor1-bottom-middle").find("li").on("mouseout",function(){
 	//	var index=$(this).index()
 	//	$(".yincang").eq(index).css("display","none")
 	//})
-	$(".floor1-bottom-middle").find("li").on("mouseover", function () {
-		var index = $(this).index();
+	$(".floor11").on("mouseover", function () {
+		var index = $(this).index(".floor11");
+		//	console.log(index)
+		//	var index=$(this).index()
 		$(".yincang").eq(index).css("display", "block");
 	});
-	$(".floor1-bottom-middle").find("li").on("mouseout", function () {
-		var index = $(this).index();
+	$(".floor11").on("mouseout", function () {
+		var index = $(this).index(".floor11");
 		$(".yincang").eq(index).css("display", "none");
 	});
 	//$(window).scroll(function(){
@@ -200,7 +225,7 @@ $(function () {
 	$(".floor-top").find("li").click(function () {
 		flag = false;
 		var index = $(this).index();
-		console.log(11111);
+		//					console.log(11111);
 		$(this).addClass("hover").siblings().removeClass("hover");
 		$("body,html").stop().animate({ "scrollTop": $floor1.eq(index).offset().top }, 500, function () {
 			flag = true;

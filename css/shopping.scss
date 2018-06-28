@@ -65,6 +65,10 @@
     width:79px;
     height:44px;
 }
+.container2{
+    width: 990px;
+    height: auto;
+}
 .container1{
     border: 1px solid #CECECE;
     padding: 20px 0;
@@ -90,6 +94,12 @@
     height: 82px;
     margin-right: 5px;
 }
+.container1 div:nth-child(2)>a>img{
+    display: block;
+    width: 82px;
+    height: 82px;
+}
+
 .container1 div:nth-child(3){
     overflow: hidden;
     float: left;
@@ -153,4 +163,13 @@
         display: block;
     }
 }
-
+#footer{
+   
+    width: 990px!important;
+    
+}
+.footer-end{
+    width: 990px!important;
+    border-top: 1px solid #CECECE;
+    padding-top: 14px;
+}

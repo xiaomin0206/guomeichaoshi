@@ -289,10 +289,10 @@ a:hover {
   cursor: pointer;
   display: block; }
 
-.btn_left1 {
+.btn_left2 {
   left: 0px; }
 
-.btn_right1 {
+.btn_right2 {
   right: 0px; }
 
 .nums {
@@ -661,7 +661,7 @@ a:hover {
 .floor-top li.hover {
   background: #CECECE; }
 
-#wrap-4 {
+.wrap-4 {
   width: 100%; }
 
 .floor1 {
@@ -844,8 +844,7 @@ a:hover {
   height: 224.5px;
   width: 1200px;
   margin: 15px auto 0;
-  overflow: hidden;
-  border: 1px solid red; }
+  overflow: hidden; }
 
 .pinzhi-top {
   height: 42px;

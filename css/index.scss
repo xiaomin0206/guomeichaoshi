@@ -302,13 +302,11 @@ a:hover{
                 }
 }
 #box {
-               width:760px;
+                width:760px;
                 height: 400px;
                 position:relative;
             }
             .content li{
-                
-                
                 list-style: none;
                 position:absolute;
             }
@@ -328,11 +326,11 @@ a:hover{
                 display: block;
             
             }
-            .btn_left1{
+            .btn_left2{
                 left:0px;
                 
             }
-            .btn_right1{
+            .btn_right2{
                 right:0px;
             }
             .nums{
@@ -356,7 +354,7 @@ a:hover{
             }
         .nums .bg{
                       background-color: red;
-                  }
+}
               
 .banner-middle-bottom{
     margin-top: 10px;
@@ -750,7 +748,7 @@ a:hover{
     background: #CECECE;
 }
 ///////////////////////////////////休闲零食
-#wrap-4{
+.wrap-4{
     width: 100%;
 }
 .floor1{
@@ -954,7 +952,7 @@ a:hover{
     width: 1200px;
     margin: 15px auto 0;
     overflow: hidden;
-    border:1px solid red;
+//  border:1px solid red;
 }
 .pinzhi-top{
     height: 42px;
